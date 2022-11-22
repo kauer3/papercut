@@ -22,6 +22,10 @@ const Moon = styled.div`
   width: 8em;
   height: 8em;
   border-radius: 50%;
+  background-color: #ffffff;
+  opacity: 1;
+  background-image: radial-gradient(circle at center center, #fafafa, #ffffff), repeating-radial-gradient(circle at center center, #fafafa, #fafafa, 4px, transparent 8px, transparent 4px);
+  background-blend-mode: multiply;
   /* mask-image: radial-gradient(circle, black 20%, rgba(0, 0, 0, 0.5) 50%); */
   /* mask-origin: border-box; */
 
