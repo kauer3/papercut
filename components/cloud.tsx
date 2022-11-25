@@ -26,8 +26,9 @@ const Cloud = styled.div`
   border-radius: 120px 120px 100px 110px;
   filter: drop-shadow(10px 5px 10px #000);
   animation-name: ${float};
-  animation-timing-function: cubic-bezier(0, .3, .3, 0);
+  animation-timing-function: cubic-bezier(0, .3, .1, 0);
   animation-iteration-count: infinite;
+  animation-fill-mode: both;
 
   ::after {
     position: absolute;
@@ -53,21 +54,29 @@ const Cloud = styled.div`
     right: 100px;
   }
 
-  :nth-of-type(2), :nth-of-type(4), nth-of-type(7) {
+  :nth-of-type(2), :nth-of-type(4), :nth-of-type(7) {
     animation-direction: alternate;
     scale: -1 1;
     filter: drop-shadow(-10px 5px 10px #000);
     z-index: 2
   }
 
-  :nth-of-type(3), :nth-of-type(6), nth-of-type(9), nth-of-type(10) {
+  :nth-of-type(3), :nth-of-type(5), :nth-of-type(6), :nth-of-type(9), :nth-of-type(10) {
     animation-direction: alternate-reverse;
     z-index: 11
   }
 
-  :nth-of-type(1), :nth-of-type(5), nth-of-type(8) {
+  :nth-of-type(1), :nth-of-type(5), :nth-of-type(8) {
     scale: -.9 .9;
     filter: drop-shadow(-10px 5px 5px #000);
+  }
+
+  :nth-of-type(4), :nth-of-type(7) {
+    animation-delay: 4s;
+  }
+
+  :nth-of-type(2), :nth-of-type(5), :nth-of-type(10) {
+    animation-delay: 8s;
   }
 
   :nth-of-type(1) {
@@ -79,6 +88,7 @@ const Cloud = styled.div`
   :nth-of-type(2) {
     top: 25px;
     animation-duration: 37s;
+    animation-delay: 4s;
   }
 
   :nth-of-type(3) {
@@ -88,41 +98,44 @@ const Cloud = styled.div`
 
   :nth-of-type(4) {
     top: 54px;
-    animation-duration: 33s;
+    animation-duration: 30s;
+    animation-delay: 6s;
   }
 
   :nth-of-type(5) {
     top: 67px;
-    z-index: 13;
-    animation-duration: 31s;
+    animation-duration: 27s;
+    animation-delay: 8s;
   }
 
   :nth-of-type(6) {
     top: 80px;
     z-index: 12;
-    animation-duration: 29s;
+    animation-duration: 26s;
   }
 
   :nth-of-type(7) {
     top: 92px;
-    animation-duration: 27s;
+    animation-duration: 22s;
+    animation-delay: 10s;
   }
 
   :nth-of-type(8) {
     top: 105px;
-    animation-duration: 25s;
+    animation-duration: 30s;
   }
 
   :nth-of-type(9) {
     top: 120px;
-    animation-duration: 23s;
+    animation-duration: 24s;
     z-index: 2;
   }
 
   :nth-of-type(10) {
     top: 135px;
     scale: -1.1 1.1;
-    animation-duration: 22s;
+    animation-duration: 20s;
+    animation-delay: 12s;
     z-index: 2;
   }
 `
