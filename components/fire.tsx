@@ -68,13 +68,13 @@ const FireContainer = styled.div`
       box-shadow: 0 0 15px 10px darkblue;
     }
 
-    /* span:nth-child(6) { */
-    /*   width: 40px; */
-    /*   height: 40px; */
-    /*   background: #000; */
-    /*   box-shadow: 0 0 15px 10px #000; */
-    /*   bottom: -50px; */
-    /* } */
+    span:nth-child(6) {
+      width: 40px;
+      height: 40px;
+      background: #000;
+      box-shadow: 0 0 15px 10px #000;
+      bottom: -50px;
+    }
   }
 `
 
