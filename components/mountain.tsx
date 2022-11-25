@@ -89,7 +89,7 @@ const Mountain: React.FC<MountainProps> = ({ order }) => {
   let shadowProps: MountainShadowProps;
   let snowProps: SnowProps;
 
-  if (order === 1) {
+  if (order === 0) {
     mountainProps = {
       height: 32,
       width: 50
@@ -103,7 +103,7 @@ const Mountain: React.FC<MountainProps> = ({ order }) => {
       width: 17,
       altSnow: true
     };
-  } else if (order === 2) {
+  } else if (order === 1) {
     mountainProps = {
       height: 25,
       width: 30
@@ -117,7 +117,7 @@ const Mountain: React.FC<MountainProps> = ({ order }) => {
       width: 13,
       altSnow: true
     };
-  } else if (order === 3) {
+  } else if (order === 2) {
     mountainProps = {
       height: 37,
       width: 40

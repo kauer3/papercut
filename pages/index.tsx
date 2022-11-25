@@ -5,6 +5,7 @@ import {
 } from '../components/sharedstyles'
 import Mountain from '../components/mountain'
 import Tree from '../components/tree'
+import Clouds from '../components/cloud'
 
 const ArtContainer = styled.div`
   position: relative;
@@ -12,12 +13,13 @@ const ArtContainer = styled.div`
   flex-direction: column;
   width: 80%;
   height: 70%;
-  border: 1px solid #362a09;
+  border: 1px dotted brown;
 `
 
 const Moon = styled.div`
   position: absolute;
-  align-self: 'center';
+  align-self: center;
+  transform: translate(-100%);
   background: #d0d0d0;
   width: 8em;
   height: 8em;
@@ -26,25 +28,29 @@ const Moon = styled.div`
   opacity: 1;
   background-image: radial-gradient(circle at center center, #fafafa, #ffffff), repeating-radial-gradient(circle at center center, #fafafa, #fafafa, 4px, transparent 8px, transparent 4px);
   background-blend-mode: multiply;
-  /* mask-image: radial-gradient(circle, black 20%, rgba(0, 0, 0, 0.5) 50%); */
-  /* mask-origin: border-box; */
+  box-shadow: 0 0 140px #ffffff;
+  filter: drop-shadow(0 0 30px #ffe695);
+  /* z-index: 10; */
 
-  /* .shadow { */
-  /*   transform: translate(-1em, -.3em); */
-  /*   background: #909090; */
-  /*   width: 7em; */
-  /*   height: 7em; */
-  /*   border-radius: 50%; */
-  /* } */
+/*   div { */
+/*     height: 15%; */
+/*     width: 15%; */
+/*     background: #a8a39400; */
+/*     box-shadow: inset -1px -1px #59574f99; */
+/*     border-radius: 50%; */
+/*     left: 15%; */
+/*     top: 15%; */
+/*     position: absolute; */
+/*   } */
 `
 
 const Ground = styled.div`
   position: absolute;
-  align-self: 'center';
+  align-self: center;
   background: #C2B280;
-  width: 150vw;
+  width: 3000px;
   height: 100vh;
-  bottom: -26.1em;
+  bottom: -25.1em;
   z-index: 10;
   clip-path: ellipse(49% 9% at 50% 50%);
 `
@@ -58,20 +64,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <ArtContainer >
-        <Moon>
-          <div className="full-moon" />
-          <div className="shadow" />
-        </Moon>
-        <Mountain order={1} />
-        <Mountain order={2} />
-        <Mountain order={3} />
-        <Mountain order={4} />
-        <Tree order={1} />
-        <Tree order={2} />
-        <Tree order={3} />
-        <Tree order={4} />
-        <Tree order={5} />
-        <Tree order={6} />
+        <Moon />
+        <Clouds />
+        {Array(4).fill(true).map((_, i) => <Mountain order={i} key={i} />)}
+        {Array(6).fill(true).map((_, i) => <Tree order={i} key={i} />)}
       </ArtContainer >
       <Ground />
     </Container>
