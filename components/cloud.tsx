@@ -26,7 +26,7 @@ const Cloud = styled.div`
   border-radius: 120px 120px 100px 110px;
   filter: drop-shadow(10px 5px 10px #000);
   animation-name: ${float};
-  animation-timing-function: cubic-bezier(0, .3, .1, 0);
+  animation-timing-function: cubic-bezier(0, .15, .1, 0);
   animation-iteration-count: infinite;
   animation-fill-mode: both;
 
@@ -68,7 +68,7 @@ const Cloud = styled.div`
 
   :nth-of-type(1), :nth-of-type(5), :nth-of-type(8) {
     scale: -.9 .9;
-    filter: drop-shadow(-10px 5px 5px #000);
+    filter: drop-shadow(-10px 5px 10px #000);
   }
 
   :nth-of-type(4), :nth-of-type(7) {
@@ -82,29 +82,29 @@ const Cloud = styled.div`
   :nth-of-type(1) {
     scale: -.80 .80;
     top: 10px;
-    animation-duration: 40s;
+    animation-duration: 45s;
   }
 
   :nth-of-type(2) {
     top: 25px;
-    animation-duration: 37s;
+    animation-duration: 35s;
     animation-delay: 4s;
   }
 
   :nth-of-type(3) {
     top: 40px;
-    animation-duration: 35s;
+    animation-duration: 40s;
   }
 
   :nth-of-type(4) {
     top: 54px;
-    animation-duration: 30s;
+    animation-duration: 28s;
     animation-delay: 6s;
   }
 
   :nth-of-type(5) {
     top: 67px;
-    animation-duration: 27s;
+    animation-duration: 32s;
     animation-delay: 8s;
   }
 
