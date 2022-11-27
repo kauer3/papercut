@@ -28,7 +28,7 @@ const FireWrapper = styled.div`
   align-items: flex-end;
   height: 100%;
   z-index: 20;
-  translate: 15em;
+  translate: 100px;
 `
 
 const FireContainer = styled.div`

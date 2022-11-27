@@ -10,6 +10,16 @@ const Container = styled.div`
   min-height: 100vh;
 `
 
-// font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+const Wood = styled.div`
+  height: 5em;
+  width: 2em;
+  background-color: #3d2408;
+  opacity: 1;
+  background-image: linear-gradient(to right, #27170c, #27170c 4px, #3d2408 4px, #3d2408 );
+  background-size: 8px 100%;
+`
 
-export { Container }
+export {
+  Container,
+  Wood
+}

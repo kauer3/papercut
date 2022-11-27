@@ -118,6 +118,7 @@ const Cloud = styled.div`
     top: 92px;
     animation-duration: 22s;
     animation-delay: 10s;
+    z-index: 12;
   }
 
   :nth-of-type(8) {

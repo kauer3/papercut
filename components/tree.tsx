@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import { Wood } from './sharedstyles';
 
 interface MountainProps {
   order: number;
@@ -14,14 +15,14 @@ interface MountainShadowProps {
   index: number;
 };
 
-const Wood = styled.div`
-  height: 5em;
-  width: 2em;
-  background-color: #3d2408;
-  opacity: 1;
-  background-image: linear-gradient(to right, #27170c, #27170c 4px, #3d2408 4px, #3d2408 );
-  background-size: 8px 100%;
-`
+// const Wood = styled.div`
+//   height: 5em;
+//   width: 2em;
+//   background-color: #3d2408;
+//   opacity: 1;
+//   background-image: linear-gradient(to right, #27170c, #27170c 4px, #3d2408 4px, #3d2408 );
+//   background-size: 8px 100%;
+// `
 
 const TreeContainer = styled.div<MountainShadowProps>`
   position: absolute;
