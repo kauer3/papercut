@@ -26,9 +26,20 @@ const FireWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: 100%;
   z-index: 20;
-  translate: 15em;
+  margin-top: auto;
+  width: fit-content;
+  align-self: center;
+  /* translate: 15em; */
+  filter: drop-shadow(0 -25px 100px orangered);
+  transition: .2s ease-out;
+
+  :hover {
+    filter: drop-shadow(0 -25px 100px orangered);
+  }
+`
+
+const FireAndSmokeContainer = styled.div`
 `
 
 const FireContainer = styled.div`
@@ -40,6 +51,12 @@ const FireContainer = styled.div`
   translate: 0 -20px;
   z-index: 20;
   filter: drop-shadow(0 -25px 50px orangered);
+  transition: .2s ease-out;
+
+  :hover {
+    scale: 1.3 1.3;
+    filter: drop-shadow(0 -10px 20px purple);
+  }
 
   .fire-wrapper {
     position: relative;
@@ -141,11 +158,13 @@ const Fire: React.FC = () => {
         <Wood />
         <Wood />
       </Woods>
-      <FireContainer>
-        <div className="fire-wrapper">
-          {Array(6).fill(<span />)}
-        </div>
-      </FireContainer >
+      <FireAndSmokeContainer>
+        <FireContainer>
+          <div className="fire-wrapper">
+            {Array(6).fill(<span />)}
+          </div>
+        </FireContainer >
+      </FireAndSmokeContainer>
     </FireWrapper>
   );
 };
