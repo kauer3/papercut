@@ -35,7 +35,7 @@ const FireWrapper = styled.div`
   transition: .2s ease-out;
 
   :hover {
-    filter: drop-shadow(0 -25px 100px orangered);
+    filter: drop-shadow(0 -25px 70px orangered);
   }
 `
 
@@ -54,7 +54,7 @@ const FireContainer = styled.div`
   transition: .2s ease-out;
 
   :hover {
-    scale: 1.3 1.3;
+    scale: 1.3 1.4;
     filter: drop-shadow(0 -10px 20px purple);
   }
 
@@ -123,7 +123,7 @@ const FireContainer = styled.div`
 `
 
 const Woods = styled.div`
-filter: saturate(30%);
+filter: saturate(10%) brightness(160%);
 
   div {
     width: 19px;
