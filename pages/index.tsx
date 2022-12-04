@@ -31,7 +31,6 @@ const Moon = styled.div`
   background-blend-mode: multiply;
   box-shadow: 0 0 140px #ffffff;
   filter: drop-shadow(0 0 30px #ffe695);
-  /* z-index: 10; */
 
 /*   div { */
 /*     height: 15%; */
