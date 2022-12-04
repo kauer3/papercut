@@ -31,17 +31,6 @@ const Moon = styled.div`
   background-blend-mode: multiply;
   box-shadow: 0 0 140px #ffffff;
   filter: drop-shadow(0 0 30px #ffe695);
-
-/*   div { */
-/*     height: 15%; */
-/*     width: 15%; */
-/*     background: #a8a39400; */
-/*     box-shadow: inset -1px -1px #59574f99; */
-/*     border-radius: 50%; */
-/*     left: 15%; */
-/*     top: 15%; */
-/*     position: absolute; */
-/*   } */
 `
 
 const Ground = styled.div`
