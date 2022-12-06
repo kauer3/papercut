@@ -17,8 +17,7 @@ const ArtContainer = styled.div`
   border: 1px dotted brown;
 `
 
-const Moon = styled.div`
-  position: absolute;
+const Moon = styled.div` position: absolute;
   align-self: center;
   transform: translate(-100%);
   background: #d0d0d0;

@@ -40,6 +40,25 @@ const FireWrapper = styled.div`
 `
 
 const FireAndSmokeContainer = styled.div`
+  position: relative;
+`
+
+const SmokeContainer = styled.div`
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  translate: -50% -350%;
+  /* background: blue; */
+  z-index: 20;
+
+  div {
+    position: absolute;
+    background: purple;
+    /* border-radius: 50%; */
+    height: 40px;
+    widht: 40px;
+    z-index: 20;
+  }
 `
 
 const FireContainer = styled.div`
@@ -159,6 +178,13 @@ const Fire: React.FC = () => {
         <Wood />
       </Woods>
       <FireAndSmokeContainer>
+        <SmokeContainer>
+          <div />
+          <span />
+          <span />
+          <span />
+          <span />
+        </SmokeContainer >
         <FireContainer>
           <div className="fire-wrapper">
             {Array(6).fill(<span />)}
