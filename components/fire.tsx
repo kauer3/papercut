@@ -22,6 +22,27 @@ const flick = keyframes`
   }
 `;
 
+const smoke = keyframes`
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 7;
+  }
+  40% {
+    transform: rotate(-1deg);
+  }
+  60% {
+    transform: rotate(1deg);
+  }
+  80% {
+    transform: rotate(-1deg) scaleY(0.90);
+  }
+  100% {
+    opacity: 0;
+  }
+`;
+
 const FireWrapper = styled.div`
   display: flex;
   justify-content: center;
@@ -48,16 +69,16 @@ const SmokeContainer = styled.div`
   height: 40px;
   width: 40px;
   translate: -50% -350%;
-  /* background: blue; */
-  z-index: 20;
 
-  div {
+  span {
     position: absolute;
-    background: purple;
-    /* border-radius: 50%; */
+    background: #f5f5f555;
+    /* opacity: 0; */
+    border-radius: 50%;
     height: 40px;
-    widht: 40px;
-    z-index: 20;
+    width: 40px;
+    box-shadow: 0 -20px 50px black;
+    filter: drop-shadow(0 20px 20px black) blur(10px);
   }
 `
 
@@ -178,18 +199,17 @@ const Fire: React.FC = () => {
         <Wood />
       </Woods>
       <FireAndSmokeContainer>
-        <SmokeContainer>
-          <div />
-          <span />
-          <span />
-          <span />
-          <span />
-        </SmokeContainer >
         <FireContainer>
           <div className="fire-wrapper">
             {Array(6).fill(<span />)}
           </div>
         </FireContainer >
+        <SmokeContainer>
+          <span />
+          {/* <span /> */}
+          {/* <span /> */}
+          {/* <span /> */}
+        </SmokeContainer >
       </FireAndSmokeContainer>
     </FireWrapper>
   );
