@@ -101,12 +101,6 @@ const SmokeContainer = styled.div`
     :nth-child(6) {
       animation-delay: 7s;
     }
-    /* :nth-child(7) { */
-    /*   animation-delay: 6s; */
-    /* } */
-    /* :nth-child(8) { */
-    /*   animation-delay: 7s; */
-    /* } */
   }
 `
 
