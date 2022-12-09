@@ -25,21 +25,28 @@ const flick = keyframes`
 const smoke = keyframes`
   0% {
     opacity: 0;
+    translate: 0 0;
+    filter: drop-shadow(0 20px 5px black) blur(30px);
   }
   5% {
-    opacity: 7;
+    opacity: 1;
   }
-  40% {
-    transform: rotate(-1deg);
+  30% {
+    filter: drop-shadow(0 20px 5px black) blur(15px);
   }
-  60% {
-    transform: rotate(1deg);
-  }
-  80% {
-    transform: rotate(-1deg) scaleY(0.90);
+  // 60% {
+  //   transform: rotate(1deg);
+  // }
+  65% {
+    opacity: .8;
+    scale: 2.5 1.5;
+    filter: drop-shadow(0 0 0 black) blur(15px);
   }
   100% {
     opacity: 0;
+    translate: 0 -250px;
+    scale: 2.5 1;
+    filter: drop-shadow(0 0 5px black) blur(30px);
   }
 `;
 
@@ -77,8 +84,32 @@ const SmokeContainer = styled.div`
     border-radius: 50%;
     height: 40px;
     width: 40px;
-    box-shadow: 0 -20px 50px black;
-    filter: drop-shadow(0 20px 20px black) blur(10px);
+    box-shadow: 0 -20px 5px black;
+    filter: drop-shadow(0 20px 5px black) blur(16px);
+    animation: ${smoke} 7.8s ease-in infinite;
+    animation-fill-mode: both;
+
+    :nth-child(2) {
+      animation-delay: 1.3s;
+    }
+    :nth-child(3) {
+      animation-delay: 2.6s;
+    }
+    :nth-child(4) {
+      animation-delay: 3.9s;
+    }
+    :nth-child(5) {
+      animation-delay: 5.2s;
+    }
+    :nth-child(6) {
+      animation-delay: 6.5s;
+    }
+    /* :nth-child(7) { */
+    /*   animation-delay: 6s; */
+    /* } */
+    /* :nth-child(8) { */
+    /*   animation-delay: 7s; */
+    /* } */
   }
 `
 
@@ -109,6 +140,7 @@ const FireContainer = styled.div`
       rotate: -45deg;
       translate: -50%;
       opacity: .70;
+      /* filter: blur(0px); */
 
       :nth-child(5), :nth-child(6) {
         border-radius: 50%;
@@ -206,9 +238,11 @@ const Fire: React.FC = () => {
         </FireContainer >
         <SmokeContainer>
           <span />
-          {/* <span /> */}
-          {/* <span /> */}
-          {/* <span /> */}
+          <span />
+          <span />
+          <span />
+          <span />
+          <span />
         </SmokeContainer >
       </FireAndSmokeContainer>
     </FireWrapper>
