@@ -32,11 +32,8 @@ const smoke = keyframes`
     opacity: 1;
   }
   30% {
-    filter: drop-shadow(0 20px 5px black) blur(15px);
+    filter: drop-shadow(0 20px 5px black) blur(20px);
   }
-  // 60% {
-  //   transform: rotate(1deg);
-  // }
   65% {
     opacity: .8;
     scale: 2.5 1.5;
@@ -86,23 +83,23 @@ const SmokeContainer = styled.div`
     width: 40px;
     box-shadow: 0 -20px 5px black;
     filter: drop-shadow(0 20px 5px black) blur(16px);
-    animation: ${smoke} 7.8s ease-in infinite;
+    animation: ${smoke} 8.5s ease-in infinite;
     animation-fill-mode: both;
 
     :nth-child(2) {
-      animation-delay: 1.3s;
+      animation-delay: 1.5s;
     }
     :nth-child(3) {
-      animation-delay: 2.6s;
+      animation-delay: 3s;
     }
     :nth-child(4) {
-      animation-delay: 3.9s;
+      animation-delay: 4.5s;
     }
     :nth-child(5) {
-      animation-delay: 5.2s;
+      animation-delay: 6s;
     }
     :nth-child(6) {
-      animation-delay: 6.5s;
+      animation-delay: 7s;
     }
     /* :nth-child(7) { */
     /*   animation-delay: 6s; */
