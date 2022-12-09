@@ -165,23 +165,6 @@ const FireContainer = styled.div`
       background: lightyellow;
       box-shadow: 0 0 9px 4px lightyellow;
     }
-
-    /* span:nth-child(5) { */
-    /*   width: .768em; */
-    /*   height: .768em; */
-    /*   background: #5a32a866; */
-    /*   box-shadow: 0 0 15px 10px #5a32a866; */
-    /*   bottom: -5px; */
-    /* } */
-
-    /* span:nth-child(6) { */
-    /*   width: 2em; */
-    /*   height: 2em; */
-    /*   background: #00000033; */
-    /*   box-shadow: 0 0 15px 10px #00000033; */
-    /*   bottom: -20px; */
-    /*   filter: blur(150%); */
-    /* } */
   }
 `
 
