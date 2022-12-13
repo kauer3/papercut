@@ -77,7 +77,6 @@ const SmokeContainer = styled.div`
   span {
     position: absolute;
     background: #f5f5f555;
-    /* opacity: 0; */
     border-radius: 50%;
     height: 40px;
     width: 40px;
