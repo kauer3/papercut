@@ -104,11 +104,6 @@ const SmokeContainer = styled.div`
 `
 
 const FireContainer = styled.div`
-  /* height: 800px; */
-  /* width: 800px; */
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
   translate: 0 -20px;
   z-index: 20;
   filter: drop-shadow(0 -25px 50px orangered);
