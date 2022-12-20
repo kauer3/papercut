@@ -7,6 +7,7 @@ import Mountain from '../components/mountain'
 import Tree from '../components/tree'
 import Clouds from '../components/clouds'
 import Fire from '../components/fire'
+import House from '../components/house'
 
 const ArtContainer = styled.div`
   position: relative;
@@ -57,6 +58,7 @@ export default function Home() {
         {Array(4).fill(true).map((_, i) => <Mountain order={i} key={i} />)}
         {Array(6).fill(true).map((_, i) => <Tree order={i} key={i} />)}
         <Fire />
+        <House />
       </ArtContainer >
       <Ground />
     </Container>
