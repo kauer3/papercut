@@ -14,6 +14,7 @@ const ArtContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 80%;
+  max-width: 900px;
   height: 70%;
   border: 1px dotted brown;
 
@@ -25,8 +26,8 @@ const ArtContainer = styled.div`
     z-index: 10;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding-left: 40%;
+    justify-content: space-between;
+    padding-left: 50%;
   }
 `
 
