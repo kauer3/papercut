@@ -16,6 +16,18 @@ const ArtContainer = styled.div`
   width: 80%;
   height: 70%;
   border: 1px dotted brown;
+
+  div.groud-elements-container {
+    position: absolute;
+    border: 2px solid yellow;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 40%;
+  }
 `
 
 const Moon = styled.div` position: absolute;
@@ -57,8 +69,10 @@ export default function Home() {
         <Clouds />
         {Array(4).fill(true).map((_, i) => <Mountain order={i} key={i} />)}
         {Array(6).fill(true).map((_, i) => <Tree order={i} key={i} />)}
-        <Fire />
-        <House />
+        <div className="groud-elements-container">
+          <Fire />
+          <House />
+        </div>
       </ArtContainer >
       <Ground />
     </Container>

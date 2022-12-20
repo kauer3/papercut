@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components'
 
 const HouseContainer = styled.div`
-  position: absolute;
+  /* position: absolute; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,7 +9,8 @@ const HouseContainer = styled.div`
   z-index: 20;
   margin-top: auto;
   bottom: 0;
-  translate: 20em;
+  /* right: 0; */
+  /* translate: -100%; */
 `
 
 const Roof = styled.div`
@@ -24,7 +25,7 @@ const Roof = styled.div`
     width: 102px;
 
     &.left-roof {
-    background: repeating-linear-gradient( -45deg, #492108, #492108 2px, #6d371a 2px, #6d371a 10px );
+      background: repeating-linear-gradient( -45deg, #492108, #492108 2px, #6d371a 2px, #6d371a 10px );
     }
 
     &.right-roof {
