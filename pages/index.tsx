@@ -47,14 +47,15 @@ const Moon = styled.div` position: absolute;
 `
 
 const Ground = styled.div`
-  position: absolute;
+  position: relative;
   align-self: center;
   background: #C2B280;
-  width: 3000px;
-  height: 100vh;
-  bottom: -25.1em;
+  width: 120vw;
+  height: 15vh;
+  bottom: 0;
+  /* left: 0; */
   z-index: 10;
-  clip-path: ellipse(49% 9% at 50% 50%);
+  border-radius: 25% 30% 0% 0%;
 `
 
 export default function Home() {
