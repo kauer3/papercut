@@ -40,14 +40,14 @@ const TreeContainer = styled.div<MountainShadowProps>`
 `
 
 const Leafs = styled.div<LeafProps>`
-transform: translate(0, 2em);
-height: ${props => props.height}em;
-width: ${props => props.width}em;
-clip-path: polygon(50% 0, 37% 16%, 43% 15%, 28% 36%, 38% 34%, 16% 66%, 26% 63%, 0 100%, 50% 95%, 100% 100%, 74% 63%, 84% 66%, 62% 34%, 72% 36%, 57% 15%, 63% 16%);
-background-color: #17441b;
-opacity: 1;
-background-image: linear-gradient(45deg, #103200 50%, #17441b 50%);
-background-size: 9px 9px;
+  transform: translate(0, 2em);
+  height: ${props => props.height}em;
+  width: ${props => props.width}em;
+  clip-path: polygon(50% 0, 37% 16%, 43% 15%, 28% 36%, 38% 34%, 16% 66%, 26% 63%, 0 100%, 50% 95%, 100% 100%, 74% 63%, 84% 66%, 62% 34%, 72% 36%, 57% 15%, 63% 16%);
+  background-color: #17441b;
+  opacity: 1;
+  background-image: linear-gradient(45deg, #103200 50%, #17441b 50%);
+  background-size: 9px 9px;
 `
 
 const Tree: React.FC<MountainProps> = ({ order }) => {

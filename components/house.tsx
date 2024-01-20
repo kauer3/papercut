@@ -1,14 +1,16 @@
 import styled, { keyframes } from 'styled-components'
 
 const HouseContainer = styled.div`
-  /* position: absolute; */
+  position: absolute;
+  align-self: center;
+  bottom: 0;
+  translate: 17em 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 20;
   margin-top: auto;
-  bottom: 0;
   /* right: 0; */
   /* translate: -100%; */
 `

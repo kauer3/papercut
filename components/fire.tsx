@@ -48,13 +48,15 @@ const smoke = keyframes`
 `;
 
 const FireWrapper = styled.div`
+  position: absolute;
+  align-self: center;
+  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   z-index: 20;
   margin-top: auto;
   width: fit-content;
-  align-self: center;
   /* translate: 15em; */
   filter: drop-shadow(0 -25px 100px orangered);
   transition: .2s ease-out;
