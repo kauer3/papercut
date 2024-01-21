@@ -60,7 +60,6 @@ const Ground = styled.div`
   min-width: 2100px;
   height: 15vh;
   bottom: 0;
-  /* left: 0; */
   z-index: 10;
   border-radius: 25% 30% 0% 0%;
   background-image: radial-gradient(#69551e88 1px, transparent 1px),
