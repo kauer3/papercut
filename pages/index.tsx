@@ -11,10 +11,9 @@ const ArtContainer = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 80%;
-  max-width: 900px;
+  width: 900px;
+  min-height: 600px;
   height: 70%;
-  border: 1px dotted brown;
 
   div.groud-elements-container {
     position: absolute;
@@ -56,13 +55,20 @@ const Moon = styled.div`
 const Ground = styled.div`
   position: relative;
   align-self: center;
-  background: #c2b280;
+  background-color: #c2b280;
   width: 120vw;
+  min-width: 2100px;
   height: 15vh;
   bottom: 0;
   /* left: 0; */
   z-index: 10;
   border-radius: 25% 30% 0% 0%;
+  background-image: radial-gradient(#69551e88 1px, transparent 1px),
+    radial-gradient(#69551e88 1px, #c2b280 1px);
+  background-size: 40px 40px;
+  background-position:
+    0 0,
+    20px 20px;
 `;
 
 export default function Home() {
