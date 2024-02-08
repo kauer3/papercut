@@ -76,7 +76,7 @@ export default function Home() {
       <Head>
         <title>Papercut - CSS Paper Art</title>
         <meta name="description" content="Paper Art created with css" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/svg+xml" href="/logo.svg" />
       </Head>
       <ArtContainer>
         <Moon />
